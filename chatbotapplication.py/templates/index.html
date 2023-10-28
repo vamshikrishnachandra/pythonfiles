@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Question Chatbot</title>
+    <style>
+        /* Your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+        }
+        #question-div {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 20px auto;
+            max-width: 400px;
+        }
+        #question {
+            font-weight: bold;
+            color: #333;
+        }
+        #answer {
+            color: #777;
+            margin-top: 10px;
+        }
+        #get-question-btn {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #get-question-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Random Question Chatbot</h1>
+    <div id="question-div">
+        <p id="question">Question: Loading...</p>
+        <p id="answer">Answer: </p>
+    </div>
+    <button id="get-question-btn">Get a Random Question</button>
+
+    <script>
+        // Your JavaScript code here
+        document.getElementById("get-question-btn").addEventListener("click", function () {
+            // Replace this with your JavaScript logic to get a random question
+            document.getElementById("question").textContent = "Question: What is your favorite color?";
+        });
+    </script>
+</body>
+</html>
